@@ -3,7 +3,7 @@ Chrome Extension and Google Home App to log for Fitbit
 
 # Installation
 To install the Chrome Extension:
-1) Go to [Chrome Extensions](chrome://extensions/)
+1) Go to Chrome Extensions - chrome://extensions/
 2) Check the developer mode in the top right
 3) Click the load unpacked extension
 4) The extension will now be in the top right
