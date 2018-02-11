@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Fitbit Air",
+  "description": "Chrome Extension to grab a meal's ingredients and nutrients and add it as a custom meal to your fitbit account",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs",
+    "<all_urls>"
+  ],
+  "background": { "scripts": ["jquery-3.3.1.min.js"] },
+  "content_scripts": [ {
+    "matches": ["http://*/*"],
+    "js": ["jquery-3.3.1.min.js"]
+  } ],
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js; object-src 'self'"
+
+}
